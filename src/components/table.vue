@@ -23,7 +23,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(item,index) in data">
+            <tr v-for="(item,index) in data" :key="index">
               <td>{{index}}</td>
               <td> <input type="text" :value="item.materialCode"> </td>
               <td>{{item.name}}</td>
