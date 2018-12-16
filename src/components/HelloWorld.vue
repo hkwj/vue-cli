@@ -1,6 +1,6 @@
 <template>
     <div class="wrap">
-
+        {{msg}}
     </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
     name: 'helloWorld',
     data () {
         return {
-            
+            msg: 'Hello World'
         }
     },
     created(){
