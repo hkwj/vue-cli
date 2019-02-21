@@ -2,16 +2,20 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 
-import HelloWorld from '@/components/HelloWorld';
-import table from '@/components/table';
+import HelloWorld from '@/components/HelloWorld.vue';
+import table from '@/components/SupplierTable.vue';
+import jsGoodPart from '@/components/JsGoodParts.vue';
 
 Vue.use(Router);
 
 
 
 let routes = [
+		{ path: '*', redirect: '/home' },
+		{ path: '/', redirect: '/home' },
 		{ path: '/home', component: HelloWorld },
-		{ path: '/table', component: table }
+		{ path: '/table', component: table },
+		{ path: '/jsGoodPart',component: jsGoodPart}
 ];
 
 

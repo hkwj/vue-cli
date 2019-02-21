@@ -1,6 +1,7 @@
 <template>
     <div class="wrap">
         {{msg}}
+        <el-radio></el-radio>
     </div>
 </template>
 
@@ -17,7 +18,7 @@ export default {
 
     },
     mounted(){
-      
+        
 
     },
     methods: {
